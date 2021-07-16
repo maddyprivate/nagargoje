@@ -8,9 +8,9 @@
 		<htmlpageheader name="invoiceHeader">
 			<div id="top_header">
 				@if($invoiceStatus === 'quote')
-				Quotation
+					<img src="{{asset('img/Nagargoje.jpg')}}" height="12%" />
 				@else
-				<img src="{{asset('img/Nagargoje.jpg')}}" height="12%" />
+					<img src="{{asset('img/Nagargoje.jpg')}}" height="12%" />
 				@endif
 			</div>
 		</htmlpageheader>
@@ -37,7 +37,7 @@
 						<td style="text-align: center; padding-bottom:0px;padding-top:15px;" colspan="4">{{$profile['address']}}</td>
 					</tr>
 					<tr class="invoice_for_row no_border ">
-						<td style="text-align: center;padding-bottom:10px;" colspan="4">Contact on: +91 99218 90622 Or Mail on: tukaramnagargoje@gmail.com</td>
+						<td style="text-align: center;padding-bottom:10px;" colspan="4">Contact on: +91 90282 94344 Or Mail on: Nagargojegasagency@gmail.com</td>
 					</tr>
 					<tr>
 						<td rowspan="2" style="width:40%;">
