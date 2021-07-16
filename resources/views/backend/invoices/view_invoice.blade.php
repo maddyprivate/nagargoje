@@ -18,7 +18,7 @@
 								<a target='_blank' href="{{ route('PrintInvoice', [$invoice->id, 'original'])  }}" class="bttn-plain mx-3">
 									<i class="fas fa-shopping-cart"></i>
 								</a>
-								<a target='_blank' href="{{ route('PrintInvoice', [$invoice->id, 'Duplicate'])  }}" class="bttn-plain mx-3">
+								<a target='_blank' href="{{ route('PrintInvoice', [$invoice->id, 'duplicate'])  }}" class="bttn-plain mx-3">
 									<i class="fas fa-shipping-fast"></i>
 								</a>
 								<a target='_blank' href="{{ route('PrintInvoice', [$invoice->id, 'triplicate'])  }}" class="bttn-plain mx-3">
