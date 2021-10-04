@@ -24,7 +24,7 @@
 									<tr>
 										<th> @lang('laryl-purchases.table.#') </th>
 										<th> @lang('laryl-purchases.table.issueDate') </th>
-										<th> @lang('laryl-purchases.table.dueDate') </th>
+										<th> @lang('laryl-purchases.table.billNo') </th>
 										<th> @lang('laryl-purchases.table.dealer') </th>
 										<th> @lang('laryl-purchases.table.purchaseStatus') </th>
 										<th> @lang('laryl-purchases.table.grandValue') </th>

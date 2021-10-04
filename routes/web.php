@@ -91,6 +91,17 @@ Route::resource('invoices', 'Backend\InvoicesController', [
     'as'            => 'Invoices',
 ])->middleware('AuthUser');
 
+Route::get('/view-all-invoices', [
+    'as'    => 'ViewAllInvoices',
+    'uses'  => 'Backend\InvoicesController@viewAllInvoices',
+])->middleware('AuthUser');
+
+Route::get('/view-all-purchases', [
+    'as'    => 'ViewAllPurchases',
+    'uses'  => 'Backend\PurchasesController@ViewAllPurchases',
+])->middleware('AuthUser');
+
+
 Route::get('/purchases/select_dealer/{dealerName}', 'Backend\PurchasesController@selectDealer', [
     'as'            => 'SelectDealer',
 ])->middleware('AuthUser');

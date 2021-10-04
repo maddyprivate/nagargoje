@@ -103,7 +103,7 @@
                                     <tr>
                                         <th> @lang('laryl-invoices.table.#') </th>
                                         <th> @lang('laryl-invoices.table.issueDate') </th>
-                                        <th> @lang('laryl-invoices.table.dueDate') </th>
+                                        <!-- <th> @lang('laryl-invoices.table.dueDate') </th> -->
                                         <th> @lang('laryl-invoices.table.invoiceStatus') </th>
                                         <th> @lang('laryl-invoices.table.grandValue') </th>
                                         <th> @lang('laryl-invoices.table.options') </th>
@@ -120,8 +120,8 @@
                                     @foreach($invoices as $invoice)
                                     <tr>
                                         <th class="scope-row">{{$i}}</th>
-                                        <td class="t-cap">{{$invoice['issueDate']}}</td>
-                                        <td class="t-up">{{$invoice['dueDate']}}</td>
+                                        <td class="t-cap">{{date('d/m/Y',strtotime($invoice['issueDate']))}}</td>
+                                        <!-- <td class="t-up">{{$invoice['dueDate']}}</td> -->
                                         <td class="t-up">{{$invoice['invoiceStatus']}}</td>
                                         <td class="t-cap">Rs. {{$invoice['grandValue']}}</td>
                                         <td>

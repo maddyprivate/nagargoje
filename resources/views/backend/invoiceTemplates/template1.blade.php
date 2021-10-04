@@ -83,11 +83,11 @@
 											<td>:</td>
 											<td><b>{{$placeOfSupply}}</b></td>
 										</tr>
-										<tr>
+										<!-- <tr>
 											<td>Due Date</td>
 											<td>:</td>
 											<td>{{$dueDate}}</td>
-										</tr>
+										</tr> -->
 									</tbody>
 								</table>
 							</div>
